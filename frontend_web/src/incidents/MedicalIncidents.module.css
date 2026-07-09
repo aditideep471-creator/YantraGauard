@@ -1,0 +1,58 @@
+.wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.image {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.details {
+  flex: 1;
+}
+
+.class {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.ack {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #f59e0b;
+  color: white;
+  cursor: pointer;
+}
+
+.resolve {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #10b981;
+  color: white;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  color: #6b7280;
+}

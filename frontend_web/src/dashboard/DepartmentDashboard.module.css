@@ -1,0 +1,38 @@
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.clickableCard {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clickableCard:hover {
+  transform: translateY(-4px);
+}
+
+.count {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #16a34a;   /* Nice modern green */
+}
+.cardTitle {
+  color: #7f1d1d;   /* Wine red */
+}

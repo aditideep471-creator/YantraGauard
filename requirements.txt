@@ -1,0 +1,54 @@
+# ===============================
+# Backend / Web
+# ===============================
+Flask==3.1.2
+flask-cors==6.0.2
+Flask-JWT-Extended==4.7.1
+Flask-Mail==0.10.0
+
+SQLAlchemy==2.0.45
+Flask-SQLAlchemy==3.1.1
+alembic==1.17.2
+
+python-dotenv==1.2.1
+requests==2.32.5
+Werkzeug==3.1.4
+Jinja2==3.1.6
+itsdangerous==2.2.0
+click==8.3.1
+blinker==1.9.0
+
+# ===============================
+# Math / Scientific
+# ===============================
+numpy==1.26.4
+scipy==1.11.4
+sympy==1.13.3
+networkx==3.2.1
+python-dateutil==2.9.0.post0
+six==1.17.0
+packaging==25.0
+
+# ===============================
+# Vision
+# ===============================
+opencv-python==4.9.0.80
+pillow==11.1.0
+
+# ===============================
+# YOLO
+# ===============================
+ultralytics==8.3.242
+ultralytics-thop==2.0.18
+
+# ===============================
+# Utilities
+# ===============================
+filelock==3.15.4
+psutil==6.1.1
+typing_extensions==4.12.2
+PyYAML==6.0.2
+certifi==2024.12.14
+charset-normalizer==3.3.2
+idna==3.7
+urllib3==2.2.3

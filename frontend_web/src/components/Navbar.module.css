@@ -1,0 +1,129 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.85),
+    rgba(255, 255, 255, 0.65)
+  );
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= BRAND ================= */
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    #1d4ed8
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= NAV LINKS ================= */
+
+.center {
+  display: flex;
+  gap: 26px;
+}
+
+.center a {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-secondary);
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.center a:hover {
+  color: var(--primary);
+}
+
+/* Animated underline */
+
+.center a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    #1d4ed8
+  );
+  transition: width 0.25s ease;
+}
+
+.center a:hover::after {
+  width: 100%;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* User name */
+
+.user {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.user em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ================= NOTIFICATION BELL ================= */
+
+.bell {
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.bell:hover {
+  transform: scale(1.1);
+}
+
+/* Notification badge */
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 50%;
+}

@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.state {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.empty {
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 20px;
+}

@@ -1,0 +1,39 @@
+.container {
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.incidentRow {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.image {
+  width: 160px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.status {
+  margin-left: 8px;
+  padding: 4px 10px;
+  background: #facc15;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.title{
+    margin-bottom: 20px;
+}

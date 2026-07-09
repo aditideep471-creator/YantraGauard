@@ -1,0 +1,16 @@
+.logoutBtn {
+  background: #722f37;   /* wine red */
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.logoutBtn:hover {
+  background: #5c2229;
+  transform: scale(1.05);
+}

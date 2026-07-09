@@ -1,0 +1,75 @@
+/* ================= PAGE BACKGROUND ================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-top: 30px;
+}
+
+/* ================= CARD STYLE ENHANCEMENT ================= */
+/* Assuming your Card component allows styling via className */
+
+.card {
+  padding: 22px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    135deg,
+    rgba(173, 216, 230, 0.25),
+    rgba(144, 238, 144, 0.18)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08),
+    inset 0 0 10px rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Smooth hover lift */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12),
+    inset 0 0 15px rgba(255, 255, 255, 0.25);
+}
+
+/* ================= HEADINGS ================= */
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #8a8f9f;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+/* ================= VALUE TEXT ================= */
+
+p {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ================= STATUS COLORS ================= */
+
+.ok {
+  color: #1cc88a;
+}
+
+.warning {
+  color: #f6c23e;
+}
+
+.error {
+  color: #e74a3b;
+  animation: pulse 1.6s infinite;
+}
+
+/* Subtle pulse for critical */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
