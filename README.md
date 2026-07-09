@@ -149,6 +149,3 @@ YantraGuard/
 |-- README.md          # Project documentation
 ```
 
-## Security Notice
-
-Never commit your `.env` files or the `__pycache__` directories to version control. Ensure they remain listed in the `.gitignore` file to protect your sensitive credentials.
